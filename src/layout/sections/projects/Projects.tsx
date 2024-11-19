@@ -8,7 +8,7 @@ export const Projects = () => {
     return (
         <StyledProjects>
             <SectionTitle>Projects</SectionTitle>
-            <FlexWrapper direction="row" wrap="wrap" gap={"30px"}>
+            <FlexWrapper direction="row" wrap="wrap" gap={"30px"} justify={"center"}>
                 <Project/>
                 <Project/>
                 <Project/>
@@ -19,5 +19,5 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-    
+    background-color: deeppink;
 `

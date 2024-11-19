@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
+import projectImage1 from "../../../../assets/images/project 1.png"
 
 export const Project = () => {
     return (
         <StyledProject>
-            <Image src={""}/>
+            <Image src={projectImage1}/>
             <Title>Project</Title>
             <Description>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
@@ -19,12 +20,15 @@ export const Project = () => {
 const StyledProject = styled.div`
     border: 1px solid blue;
     border-radius: 1em 0 1em 0;
-    padding: 10px;
+    padding: 1em;
 `
 const Image = styled.img`
+    width: 580px;
+    height: 300px;
+    object-fit: cover;
+    max-width: 100%;
 `
 const Title = styled.h3`
-    margin-top: 0;
     text-align: center;
 `
 const Description = styled.div`
