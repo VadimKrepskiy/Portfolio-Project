@@ -2,19 +2,21 @@ import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import photo from "../../../assets/images/photo.png"
+import background from "../../../assets/images/Abstract.svg"
 
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper>
-                <MainTitle>Lorem ipsum dolor amet</MainTitle>
-                <Text><p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                    <p>elit, sed do eiusmod tempor incididunt ut labore et</p>
-                    <p>dolore magna aliqua.</p>
-                </Text>
-                <Button>Let`s Begin</Button>
+            <FlexWrapper justify="space-between" align={"center"} width="1350px" maxWidth="100%" direction="row" position="relative">
+                    <Text>Hi 👋!<br/>
+                        My name is<br/>
+                        <Name>Vadim Krepskiy</Name>
+                        <MainTitle>I am a Web Developer</MainTitle>
+                    </Text>
+                <PhotoWrapper>
+                    <Photo src={photo}/>
+                </PhotoWrapper>
             </FlexWrapper>
-            <Photo src={photo}/>
         </StyledMain>
     );
 };
@@ -22,27 +24,38 @@ export const Main = () => {
 const StyledMain = styled.div`
     display: flex;
     justify-content: space-evenly;
-    background-color: yellow;
+    background-color: inherit;
     align-items: center;
     padding-top: 3em;
 `
 const MainTitle = styled.h1`
     margin-top: 0;
+    font-size: inherit;
 `
-const Text = styled.div`
+const Text = styled.p`
     margin-bottom: 2rem;
-    p{
-        margin: 0;
-    }
+    font-weight: bold;
+    font-size: 58px;
+    color: white;
+`
+const PhotoWrapper = styled.div`
+    width: 628px;
+    height: 628px;
+    background-image: url(${background});
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
 `
 const Photo = styled.img`
-    width: 234px;
-    height: 276px;
+    width: 349px;
+    height: 349px;
     object-fit: cover;
-`
-const Button = styled.button`
     max-width: 100%;
-    width: 100px;
-    padding: 0.5em 1em;
-    border-radius: 1em;
+`
+
+const Name = styled.span`
+    background: linear-gradient(to right,#13B0F5,#E70FAA);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 `
