@@ -5,7 +5,6 @@ import {Projects} from "./layout/sections/projects/Projects";
 import {Technologies} from "./layout/sections/technologies/Technologies";
 import {Experience} from "./layout/sections/experience/Experience";
 
-
 function App() {
     return (
         <div className="App">
