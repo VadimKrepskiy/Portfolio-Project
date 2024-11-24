@@ -34,7 +34,7 @@ const StyledTechStack = styled.section`
     flex-direction: column;
 `
 const Title = styled.h3`
-    margin-bottom: 4em;
+    margin: 0 0 4em;
     text-align: center;
     color: #A7A7A7;
     font-size: 32px;

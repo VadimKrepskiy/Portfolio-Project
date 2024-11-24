@@ -15,7 +15,7 @@ export const Projects = () => {
         <StyledProjects>
             <SectionTitle>Projects</SectionTitle>
             <FlexWrapper direction="row" wrap="wrap" gap={"30px"} justify={"center"}>
-                <Project src={project1} alt={"project1"} />
+                <Project src={project1} alt={"project1"}/>
                 <Project src={project2} alt={"project2"} />
                 <Project src={project3} alt={"project3"} />
                 <Project src={project4} alt={"project4"} />
@@ -27,5 +27,5 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-    background-color: deeppink;
+    background-color: inherit;
 `
