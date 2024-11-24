@@ -7,7 +7,7 @@ import background from "../../../assets/images/Abstract.svg"
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper justify="space-between" align={"center"} width="1350px" maxWidth="100%" direction="row" position="relative">
+            <FlexWrapper justify="space-between" align={"center"} width="1200px" maxWidth="100%" direction="row" position="relative">
                     <Text>Hi 👋!<br/>
                         My name is<br/>
                         <Name>Vadim Krepskiy</Name>

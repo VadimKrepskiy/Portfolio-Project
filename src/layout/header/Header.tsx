@@ -22,4 +22,5 @@ const StyledHeader = styled.header`
     justify-content: space-evenly;
     align-items: center;
     background-color: inherit;
+    font-size: 20px;
 `
