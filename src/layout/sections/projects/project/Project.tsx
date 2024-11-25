@@ -14,7 +14,7 @@ export const Project = ($props: ProjectPropsType) => {
     return (
         <StyledProject>
             <Image src={$props.src} alt={$props.alt}/>
-            <FlexWrapper padding="0 1em">
+            <FlexWrapper padding="0 1em" width="314px" maxWidth="100%">
                 <Title>{$props.title || "Project Tile goes here"}</Title>
                 <Description>
                     {$props.description || "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
@@ -33,6 +33,9 @@ const StyledProject = styled.div`
     background: #363636;
     width: 375px;
     max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 `
 const Image = styled.img`
     width: 375px;
@@ -48,6 +51,7 @@ const Description = styled.div`
     max-width: 100%;
     overflow-wrap: break-word;
     line-height: 26px;
+    font-size: 18px;
 `
 type LinkPropsType = {
     icon: string

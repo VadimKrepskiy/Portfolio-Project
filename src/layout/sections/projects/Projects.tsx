@@ -14,7 +14,7 @@ export const Projects = () => {
     return (
         <StyledProjects>
             <SectionTitle>Projects</SectionTitle>
-            <FlexWrapper direction="row" wrap="wrap" gap={"30px"} justify={"center"}>
+            <FlexWrapper direction="row" wrap="wrap" gap={"30px"} justify={"center"} width="1200px" margin="auto">
                 <Project src={project1} alt={"project1"}/>
                 <Project src={project2} alt={"project2"} />
                 <Project src={project3} alt={"project3"} />

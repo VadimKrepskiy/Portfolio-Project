@@ -10,6 +10,7 @@ type FlexWrapperPropsType = {
     maxWidth?: string
     position?: string
     padding?: string
+    margin?: string
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -23,4 +24,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     max-width: ${props => props.maxWidth || ''};
     position: ${props => props.position || ''};
     padding: ${props => props.padding || ''};
+    margin: ${props => props.margin || ''};
 `
