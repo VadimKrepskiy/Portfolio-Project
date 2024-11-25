@@ -21,5 +21,6 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #191919;
+    background-color: inherit;
+    font-size: 20px;
 `
